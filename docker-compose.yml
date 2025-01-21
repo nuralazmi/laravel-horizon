@@ -16,8 +16,8 @@ services:
       context: ./docker/php
     volumes:
       - ./project:/var/www/html
-      - ./docker/entrypoint.sh:/var/www/html/entrypoint.sh
-      - ./docker/supervisord.conf:/var/www/html/supervisord.conf
+#      - ./docker/entrypoint.sh:/var/www/html/entrypoint.sh
+#      - ./docker/supervisord.conf:/var/www/html/supervisord.conf
 #    entrypoint: ["sh", "/var/www/html/entrypoint.sh"]
     depends_on:
       - mysql
